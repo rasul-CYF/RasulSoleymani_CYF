@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Project: Event invite</title>
+    <style>
+        body {
+            font-family: georgia, serif;
+            margin: 5%;
+            display: flex;
+            justify-content: center;
+            background: rgb(242, 116, 133);
+        }
+        .invitation-card {
+            background-color: rgb(245, 208, 245);
+            color: rgb(63, 64, 5);
+            border: 1px ridge #fff;
+            border-radius: 8%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            text-align: center;
+            margin: 30px;
+        }
+        h3 {
+            text-align: center;
+        }
+        .invitation-card h1 {
+            color: #c71581;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .guest-list {
+            color: rgb(209, 109, 169); /* Fixed invalid 're' value */
+        }
+        .guest-list ul {
+            list-style: none;
+            padding: 0;
+            color: rgb(209, 109, 169);
+            text-align: center;
+        }
+        .guest-list li::before {
+            content: '💖';
+            margin-right: 5px;
+        }
+        .rsvp-explanation {
+            color: #483d8b;
+            font-size: 16px;
+            margin: 20px 0 10px;
+            font-style: oblique;
+        }
+        .rsvp-button {
+            color: gold;
+            background-color: rgb(174, 0, 186);
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+        .rsvp-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        #couple-name {
+            font-family: cursive;
+            font-size: 200%;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-card">
+        <h1>Join Our Wedding!</h1>
+        <p id="couple-name"><strong>Emily & James</strong></p>
+        <p>Saturday, June 14, 2025</p>
+        <p>4PM at Sunset Gardens</p>
+        <p>123 Love Lane, Happy Town</p> <!-- Closed the p tag -->
+        <div class="guest-list">
+            <h3>Guests List</h3>
+            <ul>
+                <li>Lili Rose</li>
+                <li>John Smith</li>
+                <li>Alex Hormoz</li>
+            </ul>
+        </div>
+        <p class="rsvp-explanation"><strong>Please let us know if you can join our celebration.</strong></p>
+        <button class="rsvp-button" onclick="alert('Thank you for your RSVP!')">RSVP NOW!</button>
+    </div>
+</body>
+</html>
